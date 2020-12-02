@@ -23,7 +23,11 @@ source ~/.profile
 nvm install 14.15.1
 nvm use 14.15.1
 
+# install aws cli
+sudo apt-get update 
+sudo apt-get install python-pip -y
+pip install awscli
 
 # clone
-git clone https://github.com/halx4/redash.git
-cd redash/
+#git clone https://github.com/halx4/redash.git
+#cd redash/
