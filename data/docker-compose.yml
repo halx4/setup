@@ -34,4 +34,12 @@ services:
   redis:
     image: redis:5.0-alpine
     restart: always
-
+  nginx:
+    image: redash/nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - server
+    links:
+      - server:redash
+    restart: always
